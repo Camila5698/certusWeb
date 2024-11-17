@@ -1,27 +1,23 @@
-/*Tipos de dato principales String (cadena de texto)
-String (Cadena de texto)
-Number
-Boolean*/
+let i = 0;
+const slider1 = document.querySelector("#sld1");
+const slider2 = document.querySelector("#sld2");
 
-/*Tipos de dato especiales (cadena de texto)
-Undefind
-Null (vacio)
-NaN (No hay numero - cuando pongo una letra en vez de numero)*/
+const reactTemas = document.getElementsByClassName('ract-tema');
 
-/*Para crear variables constantes
-Let
-Var
-Const*/
-
-/* Mi primera variable*/
-
-
-
-
-let numero = 0;
-
-do{
-    numero++;
-    document.write(numero + "<br>");
+function mostrarClic(){
+    i+=1;
+    console.log(`clic ${i}`);
 }
-while(numero > 6)
+
+function mostrarValor(){
+    
+    console.log(parseInt(slider1.value) + parseInt(slider2.value))
+}
+
+function mostrarContent(objeto){
+    console.log(objeto.target.innerText);
+}
+
+for (const tema of reactTemas){
+    tema.addEventListener('click', mostrarContent)
+}
