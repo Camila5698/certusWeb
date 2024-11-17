@@ -1,14 +1,115 @@
 body{
-    background-color: #44b187;
+    background-color: #44adb1;
+    text-align: center;
 }
 
-.navbar{
-    background-color: #e0d868;
-}
+
 
 .navbar-brand img {
-    width: 100px;  /* Puedes ajustar este valor a lo que desees (en píxeles) */
-    height: auto;  /* Mantener la proporción de la imagen */
+    width: 100px; 
+    height: auto;  
+}
+
+.navbar {
+    background-color: #d88643; 
+    font-size: 1.2em; 
+    padding: 10px 20px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1em; 
+    padding: 10px 15px; 
+    color: white !important; 
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #4682B4; 
+    border-radius: 5px;
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+.navbar-collapse {
+    justify-content: space-between; 
+}
+
+.form-control {
+    border-radius: 20px; 
+}
+
+.btn-outline-info {
+    border-radius: 20px;
+    color: #3498db; 
+    border: 2px solid #3498db; 
+}
+
+.btn-outline-info:hover {
+    background-color: #3498db;
+    color: white; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1{
+    margin-top: 20px;   
+    margin-bottom: 20px; 
+    font-size: 2.5rem;   
+    color: #333333;      
+    padding-left: 30px;  
+}
+
+
+h2 {
+    color: #3c78e7; 
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+h5 {
+    color: #000000; 
+    font-size: 1.2em;
+}
+
+h4{
+    color: #333;
 }
 
 
@@ -19,123 +120,237 @@ body{
 
 /* carrusel */
 #carouselExample {
-    width: 100%;  /* Asegura que el carrusel ocupe todo el ancho de la página */
-    height: 500px;  /* Deja que la altura se ajuste proporcionalmente */
+    width: 100%;  
+    height: 500px; 
 }
 
 #carouselExample .carousel-item img {
-    width: 100%;  /* Las imágenes ocupan el 100% del ancho del contenedor */
-    height: 500px; /* Mantienen su proporción original, sin distorsión */
+    width: 100%; 
+    height: 500px; 
     object-position:center;
-    object-fit: cover;  /* Hace que las imágenes se recorten (si es necesario) para cubrir el área sin distorsión */
+    object-fit: cover; 
 }
 
 .carousel-control-prev, .carousel-control-next {
-    z-index: 10;  /* Asegura que los controles de navegación estén por encima de las imágenes */
+    z-index: 10; 
 }
+
+
+
+
 
 
 
 
 
 /* edicion de 3 tarjetas */
-.contenedor-tarjetas{
+
+.contenedor-tarjetas {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-
+    justify-content: center;  
+    align-items: center;      
+    gap: 180px; 
+    flex-wrap: nowrap;  
+    margin: 20px;
 }
 
-
-
-
-
-
-
-
-.cursos-xpand{
+.card {
+    width: 14rem; 
+    height: 620px;  
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 30px 30px ;
-    border: 3px solid #4CAF50; /* Borde de 3 píxeles, color verde */
-    padding: 20px;  /* Espacio interno para no pegar el contenido al borde */
-    border-radius: 10px;  /* Bordes redondeados para un efecto más suave */
-    background-color: #f9f9f9; 
-}
-
-.react-xpand{
+    flex-direction: column;  
+    border: 7px solid #dfa150;  
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    overflow: hidden; 
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;  
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
 }
 
-.react-xpand-img img{
-    width: 35rem;
-    padding: 15px;
+
+.card-img-top {
+    width: 100%; 
+    height: 400px;  
+    object-fit: cover; 
+    object-position: center;  
 }
 
-.react-xpand-txt{
-    color: #e6e6e6;
-    margin-left: 20px;
-    display: block;
-    max-width: 100%;
-    height: auto;
-    padding: 15px;
+
+.card-body {
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between;  
+    flex-grow: 1;  
+    padding: 10px;
 }
 
-li{
-    margin-top: 12px;
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    flex-grow: 1;  
+}
+
+.card:hover {
+    transform: translateY(-5px);  
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); 
+}
+
+
+.btn {
+    padding: 10px 20px;
+    background-color: #f1ae32;  
+    color: white;  
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;  
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Caja de LA ENCUESTA */
+.cursos-xpand {
+    background-color: #dafcfc;  
+    border: 10px solid #f7ba5f;  
+    border-radius: 15px;  
+    padding: 20px;  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+    max-width: 1800px;
+    margin: auto;
+    transition: box-shadow 0.3s ease;
+}
+
+.cursos-xpand:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+}
 
 
 
 
 .input-normal {
-    width: 80%;  /* Ajusta el tamaño del rango, 80% del contenedor (puedes modificar este valor) */
-    height: 20px;  /* Opcional: Aumenta la altura del rango para hacerlo más visible */
-    -webkit-appearance: none;  /* Elimina el estilo por defecto del navegador (para Safari y otros) */
-    appearance: none;  /* Elimina el estilo por defecto */
-    background: #ddd;  /* Fondo gris claro para el rango */
-    border-radius: 10px;  /* Bordes redondeados */
-    outline: none;  /* Elimina el borde del rango */
-    transition: background 0.3s ease;  /* Transición para cuando el rango cambia */
+    width: 80%;
+    max-width: 400px;
+    height: 10px;
+    background-color: #ebce8f;  
+    border-radius: 5px;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.input-normal::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #eedeea;  
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input-normal:hover {
+    background-color: #c8d2da; 
+}
+
+.input-normal:active::-webkit-slider-thumb {
+    background-color: #e0de4a; 
 }
 
 
+span {
+    font-size: 1.2em;
+    color: #609ddb; 
+    font-weight: bold;
+}
+
+#resultado {
+    font-size: 1.5em;
+    color: #09a384;  
+    font-weight: bold;
+    margin-top: 20px;
+}
 
 
-
-
-
-
-.boton-js{
-    color: aliceblue;
-    font-size: 20px;
-    border-radius: 20px;
-    background-color: aquamarine;
-    margin: 15px;
-    border: 3px;
+.boton-js {
     padding: 10px 20px;
+    background-color: #e4be6c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    margin-left: 300px;
+    margin-right: auto;
+}
+
+.boton-js:hover {
+    background-color: #2980b9;  
 }
 
 
-#resultado{
-    color: #06586C;
-    font-size: 4em;  /* Aumentamos el tamaño del texto de 'SUMA' */
-    font-weight: bold;  /* Hacemos que el texto sea más grueso */
-    color: #4CAF50;  /* Color verde para resaltar */
-    margin-top: 20px;  /* Un poco de espacio arriba */
-    text-align: center;  /* Centramos el texto horizontalmente */
-    width: 100%;  /* Aseguramos que ocupe todo el ancho disponible */
-    display: block;  /* Convertimos a bloque para que ocupe el 100% del ancho */
+.react-xpand {
+    display: flex;  
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.react-xpand-img {
+    flex: 1;
+    padding-right: 20px;  
+}
+
+.react-xpand-img img {
+    width: 100%; 
+    max-width: 550px;  
+    border-radius: 8px;
 }
 
 
+.react-xpand-txt {
+    flex: 1;
+    padding-left: 10px;
+    text-align: left;
+}
+
+
+br {
+    margin-bottom: 10px;
+}
 
 
 
@@ -150,8 +365,8 @@ li{
     align-items: stretch; 
     gap: 20px; 
     padding: 20px; 
-    background-color:#ccc ;
-    border: 10px solid #ccc; 
+    background-color:#f7ba5f ;
+    border: 10px solid #44adb1; 
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
@@ -161,9 +376,9 @@ li{
     border-radius: 10px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 15); 
     flex: 1; 
-    background-color: #174857;
+    background-color: #dafcfc;
     font-size: 1.4rem; 
-    line-height: 1.5; 
+    line-height: 1; 
 }
 
 .c1, .c2 {
@@ -185,20 +400,30 @@ li{
 }
     
 
+
+
 /* Parrafo tachar */
 .tachado {
     cursor: pointer;
     padding: 5px;
+    color: black  ;
 }
 
-.tachado.tachado-activo {
+.verde {
+    color: green;
+}
+
+.rojo {
+    color: red;
+}
+
+.black {
+    color: rgb(0, 0, 0);
+}
+
+.tachado-activo {
     text-decoration: line-through;
-    color: gray;  /* Cambiar el color del texto cuando está tachado */
 }
-
-
-
-
 
 
 
