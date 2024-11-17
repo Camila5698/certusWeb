@@ -7,11 +7,17 @@
     <link rel="stylesheet" href="style.css">
     <title>Mi primera página con Bootstrap 5</title>
 </head>
+
+
+
+
+
+
 <body>
     <nav class="navbar navbar-expand-sm border-bottom border-body " data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="logo.png" alt="logo">
+            <img src="imagenes/logo.jpg" alt="logo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -40,7 +46,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Tienda</a>"
+                <a class="nav-link" href="#">Tienda</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -50,17 +56,25 @@
           </div>
         </div>
     </nav>
+    <br>
+
+
+
+
+
+
+
 
     <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="1.jpeg" class="d-block w-100" alt="1">
+            <img src="imagenes/logo1.jpg" class="d-block w-100" alt="logo1">
+          </div>
+          <div class="carousel-item active">
+            <img src="imagenes/5.jpg" class="d-block w-100" alt="5">
           </div>
           <div class="carousel-item">
-            <img src="2.jpeg" class="d-block w-100" alt="2">
-          </div>
-          <div class="carousel-item">
-            <img src="3.jpg" class="d-block w-100" alt="3">
+            <img src="imagenes/3.jpg" class="d-block w-100" alt="3">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -72,11 +86,21 @@
           <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <br>
+    <br>
+
+
+
+
+
+
+
+
 
     <div class="contenedor-tarjetas">
 
         <div id="card-react" class="card" style="width: 14rem;">
-            <img src="react.png" class="card-img-top" alt="react" style="height: 130px;" >
+            <img src="imagenes/8.jpg" class="card-img-top" alt="react" style="height: 130px;" >
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -85,7 +109,7 @@
         </div>
     
         <div id="card-vue" class="card" style="width: 14rem;">
-            <img src="vue.png" class="card-img-top" alt="vue" style="height: 130px;">
+            <img src="imagenes/10.jpg" class="card-img-top" alt="vue" style="height: 130px;">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -94,7 +118,7 @@
         </div>
     
         <div id="lara" class="card" style="width: 14rem;">
-            <img src="lara.jpg" class="card-img-top" alt="lara" style="height: 130px;">
+            <img src="imagenes/11.jpg" class="card-img-top" alt="lara" style="height: 130px;">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -102,15 +126,25 @@
             </div>
         </div>
     </div>
+    <br>
+   
 
-    <!-- ----------------------- -->
+
+
+
+
+  
+
 
     <div class="cursos-xpand">
-      <div class="react-xpand">
+      <div class="react-xpand" id="react-xpand1">
         <div class="react-xpand-img">
-          <img src="complete-guide-react-refs.png" alt="react_xpand">
+          <img src="imagenes/4.jpg" alt="react_xpand">
         </div>
         <div class="react-xpand-txt">
+            <br>
+            <br>
+            <br>
           <h2 onclick="mostrarClic()" >React JS</h2>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad possimus sint id ipsa necessitatibus et officia laborum? Autem atque id quia natus quos, modi animi ut, quibusdam omnis sequi quas!</p>
           <ul>
@@ -125,10 +159,81 @@
           <br>
           <br>
           <input type="range" class="input-normal" id="sld2"onchange="mostrarValor()">
+          <br>
+          <br>
+          <p id="resultado">SUMA </p>
+          <button class="boton-js" id="botonColor">Haz click aqui</button>
 
         </div>
       </div>
     </div>
+
+
+
+
+
+    <div>
+        <div class="flex-container">
+            <div class="caja c1">Harry Potter es una aclamada serie de novelas escritas por la autora británica J.K. Rowling, que narra la vida del joven mago Harry Potter y sus aventuras en el mundo mágico. La saga se desarrolla principalmente en el Colegio Hogwarts de Magia y Hechicería, donde Harry, junto a sus amigos Hermione Granger y Ron Weasley, descubre su identidad mágica y enfrenta una serie de desafíos que lo llevan a confrontar al oscuro mago Lord Voldemort.
+                <ul>
+                    <li class="tachado" id="uno">Introducción</li>
+                    <li class="tachado" id="dos">Componentes</li>
+                    <li class="tachado" id="tres">Estados</li>
+                    <li class="tachado" id="cuatro">Eventos</li>
+                    <li class="tachado" id="cinco">React Routes</li>
+                </ul>
+            </div>
+            
+            <div class="caja imagen">
+                <img src="imagenes/9.jpg" alt="imagen 9">
+            
+            </div>
+        </div>
+        <br>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+          
+            <div class="contact-info">
+                <h2>Contactanos</h2>
+                <p>Dirección: 935 Broadway, New York, NY 10010, EE. UU.</p>
+                <p>Teléfono: +1 (234) 687-290</p>
+                <p>Email: HPotter@mundomágico.com</p>
+            </div>
+  
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1735964910637!2d-122.4012997846818!3d37.78583477975611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064eae656f1%3A0xd4ae3b2e28c5f1f!2sGoogleplex!5e0!3m2!1ses-419!2sus!4v1614765647475!5m2!1ses-419!2sus" 
+                    width="100%" height="100%" 
+                    style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
